@@ -8,7 +8,7 @@ package cardgame;
 /**
  *
  * @author srinivsi
- */
+ date 24,sep 2019 */
 public class CardGame 
 {
 private String suit;// spades,diamonds,clubs,hearts
