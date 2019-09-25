@@ -8,6 +8,7 @@ package cardgame;
 /**
  *
  *Shashank Ananthoju - 991543348 
+  INClass Assignment#1
  */
 public class CardGame 
 {
