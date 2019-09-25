@@ -5,13 +5,18 @@
  */
 package cardgame;
 
+import java.util.Scanner;
+
 /**
  *
  * @author srinivsi
  */
 public class CardTrick {
     public static void main(String[] args) 
-    {
+    { Scanner scan = new Scanner(System.in);
+        System.out.println("Please enter the Card you want -");
+    String a = scan.nextLine();
+            
       CardGame[] magicHand = new CardGame[7];//array of objects
       for(int i=0;i<magicHand.length;i++)
       {
@@ -22,7 +27,10 @@ public class CardTrick {
       }
     for(int i=0;i<magicHand.length;i++)
       {
-      System.out.println(magicHand[i].getSuit() +" "+ magicHand[i].getValue());
+      String b = magicHand[i].getSuit() +" "+ magicHand[i].getValue();
+          System.out.println(b);
+      if(a==b){ System.out.println("Congratulaions !! , Your card is found");}
+      else {System.out.println("Sorry , Try Again");}
       
       }
 // take input suit and value from user. compare with array.if same card is 
