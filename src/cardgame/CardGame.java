@@ -4,7 +4,7 @@ package cardgame;
 /**
  *
  * @author Sargun Josun
- */
+ Date : 24th September 2019*/
 public class CardGame 
 {
     private String suit; //spades,diamonds,clubs,hearts
