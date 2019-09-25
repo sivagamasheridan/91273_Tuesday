@@ -3,12 +3,15 @@ package cardgame;
 
 /**
  *
- * @author Shashank
+ * Shashank Ananthoju - 991543348 
  */
-public class CardTrick {
+import java.util.*;
+
+public class CardTrick 
+{
      public static void main(String[] args)
      {
-       CardGame[] magicHand = new CardGame[7]; // aArray of objects
+       CardGame[] magicHand = new CardGame[7]; // Array of objects
        for(int i=0; i<magicHand.length; i++)
        {
          CardGame c1 = new CardGame(); // an object
@@ -19,5 +22,23 @@ public class CardTrick {
        }
        
      // take input suit and value from user. compare with the array print your card is found
-     }    
-}
+        Scanner input=new Scanner(System.in);
+        int userValue=input.nextInt();
+        String userSuit=input.nextLine();
+        boolean found=false;
+        
+        for(int i=0;i<magicHand.length;i++)
+        {
+            if(userValue==magicHand[i].getValue()&& userSuit.equalsIgnoreCase(magicHand[i].getSuit()))
+            {
+             found=true;
+             break;
+            }
+                if(found==true)
+                {
+                    System.out.println("Card Found");
+                }
+        }
+     
+     }     
+ }

@@ -7,7 +7,7 @@ package cardgame;
 
 /**
  *
- * @author Shashank
+ *Shashank Ananthoju - 991543348 
  */
 public class CardGame 
 {
@@ -47,7 +47,7 @@ public static final String[] SUITS = {"spades", "diamonds", "clubs", "hearts"};
 
     public int ranSuit()
     {
-     int value = (int)(Math.random()*4)+0;
+     int value = (int)(Math.random()*3+0);
      return value;
     }
 
