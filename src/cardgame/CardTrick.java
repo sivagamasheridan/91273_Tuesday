@@ -4,10 +4,11 @@
  * and open the template in the editor.
  */
 package cardgame;
+import java.util.Scanner;
 
 /**
  *
- * @author srinivsi
+ * @author fakih
  */
 public class CardTrick {
     public static void main(String[] args) 
@@ -27,7 +28,35 @@ public class CardTrick {
       }
 // take input suit and value from user. compare with array.if same card is 
 //in the array print your card is found.
+        
+        boolean cardNotFound = false;
+        Scanner dataIn = new Scanner(System.in);
+        
+        System.out.println("Please enter a suit: ");
+        String card = dataIn.nextLine();
+        System.out.println("Please enter a card value: ");
+        int cardNum = dataIn.nextInt();
+        
+        for(int j = 0; j < magicHand.length; j++)
+        {
+            if(card.equalsIgnoreCase(magicHand[j].getSuit()) && cardNum == magicHand[j].getValue())
+            {
+                System.out.println("Your matching card found");
+                cardNotFound = false;
+                break;
     
+            }//ends if
+            
+            if(!(card.equalsIgnoreCase(magicHand[magicHand.length - 1].getSuit()) && cardNum == magicHand[magicHand.length - 1].getValue()))
+            {
+                cardNotFound = true;
+            }//ends else
+        }//ends for loop
+        
+        if(cardNotFound)
+        {
+            System.out.println("Your matching card is not found");
+        }//ends if
     
     }
 }
