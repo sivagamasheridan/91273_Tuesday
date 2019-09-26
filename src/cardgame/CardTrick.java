@@ -11,6 +11,7 @@ import java.util.Scanner;
  *
  * @author srinivsi
  */
+//modified by Priya Singh
 public class CardTrick {
     public static void main(String[] args) 
     {
