@@ -1,15 +1,10 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Jerome Brown
+ *  sivagamasheridan/ICE1_91273_Tuesday
+ * September 25th 2019
  */
 package cardgame;
 
-/**
- *
- * @author srinivsi
- date 24,sep 2019
- ICE 1 activity */
 public class CardGame 
 {
 private String suit;// spades,diamonds,clubs,hearts
