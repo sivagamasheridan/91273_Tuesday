@@ -19,7 +19,7 @@ public class Card {
    private String suit; //clubs, spades, diamonds, hearts
    private int value;//1-13
 
-   public static final String [] SUITS = {"Hearts", "Diamonds", "Spades", "Clubs"};
+   public static final String [] SUIT = {"Hearts", "Diamonds", "Spades", "Clubs"};
     /**
      * @return the suit
      */
@@ -47,7 +47,17 @@ public class Card {
     public void setValue(int value) {
         this.value = value;
     }
-   
+
    //Write two methods to generate random number of values and suits here
-    
-}
+    public int RandomValue()
+    {
+      int num = (int)(Math.random()*13+1);
+      return num;
+    }
+    public int RandomSuit()
+    {
+      int sec = (int) (Math.random()*3+0);
+      return sec;
+    }
+
+    }
