@@ -8,6 +8,7 @@ package cardgame;
 /**
  *
  * @author srinivsi
+ * @CONTRIBUTOR Kevin_Dado 991550941
  */
 import java.util.Scanner;
 public class CardTrick {
