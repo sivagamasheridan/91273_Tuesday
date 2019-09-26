@@ -25,7 +25,7 @@ public class CardTrick {
         for(int i= 0; i<magicHand.length; i++){
             
             CardGame c1 = new CardGame();//an object
-            Card luckycard = new Card();
+            CardGame luckycard = new CardGame();
             
             c1.setValue(c1.ranValue());//random number from 1 to 13
             c1.setSuit(CardGame.SUITS[c1.ranSuit()]);
