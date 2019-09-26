@@ -17,41 +17,69 @@ import java.util.Scanner;
 public class CardTrick {
     public static void main(String[] args) 
     {
-      CardGame[] magicHand = new CardGame[7];//array of objects
+        CardGame[] magicHand = new CardGame[7];//array of objects
       
-      for(int i=0;i<magicHand.length;i++)
-      {
-        CardGame c1 = new CardGame();//object
-        c1.setValue(c1.ranValue());//random number 1 to 13
-        c1.setSuit(CardGame.SUITS[c1.ranSuit()]);
-        magicHand[i] =c1;
-      }
-      /*
         for(int i=0;i<magicHand.length;i++)
         {
-            System.out.println(magicHand[i].getSuit() +" "+ magicHand[i].getValue());
+          CardGame c1 = new CardGame();//object
+          c1.setValue(c1.ranValue());//random number 1 to 13
+          c1.setSuit(CardGame.SUITS[c1.ranSuit()]);
+          magicHand[i] =c1;
         }
-      */
+    /*    
+        for(int i=0;i<magicHand.length;i++)
+        {
+            System.out.println(magicHand[i].getSuit() + " " + 
+                    magicHand[i].getValue());
+        }
+    */      
+        System.out.println();
 
-      // Creating user card
-      CardGame luckyCard = new CardGame();
-      
-    // Getting card details to make user card object
-    System.out.println("Hello, please enter any card.\n");
+        // Creating user card
+        CardGame luckyCard = new CardGame();
 
-    // Inputting luckyCard suit
-    System.out.print("Suit: ");
-    Scanner input = new Scanner(System.in);
-    luckyCard.setSuit(input.nextLine());
+        // Getting card details to make user card object
+        System.out.println("Hello, please enter any card.\n");
 
-    // Inputting luckyCard value
-    System.out.print("Value: ");
-    luckyCard.setValue(input.nextInt());
+        // Inputting luckyCard suit
+        System.out.print("Suit:\t");
+        Scanner input = new Scanner(System.in);
+        luckyCard.setSuit(input.nextLine().toLowerCase());
+
+        // Inputting luckyCard value
+        System.out.print("Value:\t");
+        luckyCard.setValue(input.nextInt());
+        System.out.println();
         
-    //Print test for luckCard
-    System.out.println("\nLucky card suit: " +
-            luckyCard.getSuit() + " value: " +
-            luckyCard.getValue());
-    
+    /*    
+        //Print test for luckCard
+        System.out.println("Lucky Card");
+        System.out.println("Suit:\t" + luckyCard.getSuit());
+        System.out.println("Value:\t" + luckyCard.getValue() + '\n');
+    */    
+        
+        // Searching hand for lucky card
+        boolean isCardFound = false;
+        
+        for (int i = 0; i < magicHand.length; i++) {
+            
+        /* 
+            System.out.println("Card " + (i + 1) + ':');
+            System.out.println("Suit:\t" + magicHand[i].getSuit());
+            System.out.println("Value:\t" + magicHand[i].getValue() + '\n');
+        */
+            // compares suit and value of card in hand and lucky card
+            if( magicHand[i].getSuit().equals(luckyCard.getSuit()) &&
+                magicHand[i].getValue() == luckyCard.getValue() )
+            {
+                // System.out.println("Match found");
+                isCardFound = true;
+                break;
+            }
+        }
+        
+        System.out.println(isCardFound ? 
+                "Hooray! Your card is in the magic hand of random cards!":
+                "Oh no, your card is not in the magic hand of random cards :'(");
     }
 }
