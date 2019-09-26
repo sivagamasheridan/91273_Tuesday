@@ -28,5 +28,6 @@ public class CardTrick {
 // take input suit and value from user. compare with array.if same card is 
 //in the array print your card is found. 
     
+
     }
 }
