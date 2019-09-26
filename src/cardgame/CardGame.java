@@ -7,8 +7,8 @@ package cardgame;
 
 /**
  *
- * @author srinivsi
- date 24,sep 2019
+ * @author Thuan Nguyen
+ date 25,Sep 2019
  ICE 1 activity */
 public class CardGame 
 {
