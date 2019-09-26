@@ -31,7 +31,7 @@ public class CardTrick {
 //in the array print your card is found. 
     Scanner input = new Scanner(System.in);
     System.out.println("Enter card value");
-    int n =input.nextInt();
+   int n =input.nextInt();
     System.out.println("Enter suit value");
     String v= input.nextLine();
     }
