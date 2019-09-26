@@ -7,53 +7,51 @@ package cardgame;
 
 /**
  *
- * @author Rmoho
- */
-public class CardGame {
+ * @author srinivsi
+ * Date: Tues. Sept. 24th, 2019.
+ ICE 1 activity test This is the branch*/
 
-    private String suit; // spades, diamonds, clubs, hearts
-
+public class CardGame 
+{
+private String suit;// spades,diamonds,clubs,hearts
+private int value; // 1 to 13
+public static final String[] SUITS ={"clubs","hearts","diamonds","spades"};
+    /**
+     * @return the suit
+     */
     public String getSuit() {
         return suit;
     }
 
+    /**
+     * @param suit the suit to set
+     */
     public void setSuit(String suit) {
         this.suit = suit;
     }
 
+    /**
+     * @return the value
+     */
     public int getValue() {
         return value;
     }
 
+    /**
+     * @param value the value to set
+     */
     public void setValue(int value) {
         this.value = value;
     }
-    
-    private int value; // 1 - 13
-    public static final String [] SUITS ={"clubs", "hearts", "diamonds", "spades"};
-    
-    public int ranSuit()
-    {
-        int value = (int)(Math.random() * 4) + 1;
-        return value; // is this right?
-    }
-    
-    public int ranValue()
-    {
-        int value = (int)(Math.random() * 13) + 1;
-        return value;
-    }
-    /*
-    
-    /**
-     * @param args the command line arguments
-     */
-    
-    /*
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
-    */
-    
+ //you have to write two methods for random generation of suit and value
+public int ranSuit()
+{
+    int value= (int)(Math.random()*4)+0;
+    return value;
+}
+public int ranValue()
+{
+ int value= (int)(Math.random()*13)+1;   
+ return value;
+}
 }
