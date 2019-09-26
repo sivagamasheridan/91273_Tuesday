@@ -25,6 +25,7 @@ public class CardTrick {
         for(int i= 0; i<magicHand.length; i++){
             
             CardGame c1 = new CardGame();//an object
+            Card luckycard = new Card();
             
             c1.setValue(c1.ranValue());//random number from 1 to 13
             c1.setSuit(CardGame.SUITS[c1.ranSuit()]);
@@ -32,6 +33,8 @@ public class CardTrick {
             magicHand[i] = c1;
             System.out.println(magicHand[i].getSuit()+ " "+ 
                     magicHand[i].getValue());
+            
+            System.out.println(luckycard.getValue() + " " + c1.getSuit());
         }
         
         //take input suit and value from user. compare within the array print
