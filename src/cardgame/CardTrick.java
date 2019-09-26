@@ -34,7 +34,7 @@ public class CardTrick {
             System.out.println(magicHand[i].getSuit()+ " "+ 
                     magicHand[i].getValue());
             
-            System.out.println(luckycard.getValue() + " " + c1.getSuit());
+            System.out.println(luckycard.getValue() + " " + luckycard.getSuit());
         }
         
         //take input suit and value from user. compare within the array print
