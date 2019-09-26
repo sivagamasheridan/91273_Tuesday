@@ -1,38 +1,17 @@
 /*
- * Jerome Brown
- *  sivagamasheridan/ICE1_91273_Tuesday
- * September 25th 2019
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package cardgame;
 
-import java.util.Scanner;
-
 /**
  *
- * @author Jerome Brown
+ * @author srinivsi
  */
 public class CardTrick {
-   
-    
-    
-    
     public static void main(String[] args) 
     {
-      
-      //Get input From User 
-       
-       Scanner input = new Scanner(System.in);
-       
-       System.out.print("PICK A CARD ANY CARD!!!!!!");
-      
-       //Enter Card Value
-       System.out.print("Enter Value of Card: ");
-       int valueIn = input.nextInt(); // taking value input from user 
-       
-       //Enter Suit
-       System.out.print("Enter Suit of Card: ");
-       String suitIn = input.next(); //taking suit from user
-        
       CardGame[] magicHand = new CardGame[7];//array of objects
       for(int i=0;i<magicHand.length;i++)
       {
@@ -41,27 +20,14 @@ public class CardTrick {
       c1.setSuit(CardGame.SUITS[c1.ranSuit()]);
       magicHand[i] =c1;
       }
-         
-
-       //Loop and print cards while checking for match
-       
-         for (int j=0; j<magicHand.length; j++)
-        {System.out.println(magicHand[j].getValue() + " OF " + magicHand[j].getSuit());
-       
-        
+    for(int i=0;i<magicHand.length;i++)
+      {
+      System.out.println(magicHand[i].getSuit() +" "+ magicHand[i].getValue());
+      
+      }
+// take input suit and value from user. compare with array.if same card is 
+//in the array print your card is found.
     
-         if (valueIn == magicHand[j].getValue() && suitIn.equals(magicHand[j].getSuit()))
-         { 
-             System.out.println("You've got a Match");
-         
-         }
-         
-         else if  (valueIn != magicHand[j].getValue())
-         { 
-             System.out.println("No Match");
-         
-         }
-        
+    
     }
-}
 }
