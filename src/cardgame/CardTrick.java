@@ -5,6 +5,8 @@
  */
 package cardgame;
 
+import java.util.Scanner;
+
 /**
  *
  * @author srinivsi
@@ -27,7 +29,13 @@ public class CardTrick {
       }
 // take input suit and value from user. compare with array.if same card is 
 //in the array print your card is found. 
-    
+    Scanner input1 = new Scanner(System.in);
+    System.out.println("Enter the Card Value : ");
+    int cardNumber = input1.nextInt();
+    Scanner input2 = new Scanner(System.in);
+    System.out.println("Enter your Suit Value : ");
+    String suitName = input2.nextLine();
+    System.out.println("UESER'S CARD : " + " " + suitName + " " + cardNumber);
 
     }
 }
