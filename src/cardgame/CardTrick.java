@@ -7,12 +7,11 @@ package cardgame;
 import java.util.Scanner;
 /*
  * @author srinivsi
- * 
  */
 
 /*
  * Modified by Richard Mohorovich
- * Date: Wed. Sept. 25th, 2019.
+ * Date: Wed. Sept. 26th, 2019.
 */
 public class CardTrick {
     public static void main(String[] args) 
@@ -51,23 +50,11 @@ public class CardTrick {
         luckyCard.setValue(input.nextInt());
         System.out.println();
         
-    /*    
-        //Print test for luckCard
-        System.out.println("Lucky Card");
-        System.out.println("Suit:\t" + luckyCard.getSuit());
-        System.out.println("Value:\t" + luckyCard.getValue() + '\n');
-    */    
-        
         // Searching hand for lucky card
         boolean isCardFound = false;
         
         for (int i = 0; i < magicHand.length; i++) {
             
-        /* 
-            System.out.println("Card " + (i + 1) + ':');
-            System.out.println("Suit:\t" + magicHand[i].getSuit());
-            System.out.println("Value:\t" + magicHand[i].getValue() + '\n');
-        */
             // compares suit and value of card in hand and lucky card
             if( magicHand[i].getSuit().equals(luckyCard.getSuit()) &&
                 magicHand[i].getValue() == luckyCard.getValue() )
