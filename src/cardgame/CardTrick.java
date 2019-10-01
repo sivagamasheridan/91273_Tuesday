@@ -7,7 +7,7 @@ package cardgame;
 import java.util.Scanner;
 
 /**
- *
+ * Tue,Oct 1st 2019
  * @author fakih
  */
 public class CardTrick {
