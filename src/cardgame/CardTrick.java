@@ -2,7 +2,7 @@
  * Jerome Brown
  *  sivagamasheridan/ICE1_91273_Tuesday
  * September 25th 2019
- */
+ *Tuesday/
 package cardgame;
 
 import java.util.Scanner;
