@@ -10,7 +10,8 @@ import java.util.Scanner;
 /**
  *
  * @author Thuan Nguyen
- */
+ October 1st, 2019 
+ */ 
 public class CardTrick {
     public static void main(String[] args) 
     {
