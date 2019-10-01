@@ -10,7 +10,7 @@ import java.util.Scanner;
 /**
  *
  * @author Ravneet Kaur Ranu
- */
+ * date October 1,2019/
 public class CardTrick {
     public static void main(String[] args) 
     {
