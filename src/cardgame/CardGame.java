@@ -45,12 +45,12 @@ public static final String[] SUITS ={"clubs","hearts","diamonds","spades"};
  //you have to write two methods for random generation of suit and value
 public int ranSuit()
 {
-    int value= (int)(Math.random()*4)+0;
+    int value = (int)(Math.random()*4)+0;
     return value;
 }
 public int ranValue()
 {
- int value= (int)(Math.random()*13)+1;   
- return value;
+    int value = (int)(Math.random()*13)+1;   
+    return value;
 }
 }
